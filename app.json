@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/jobList/search",
+    "pages/jobList/index",
+    "pages/introduction/index",
+    "pages/policy/index",
+    "pages/recruit/index",
+    "pages/enterprise/index",
+    "pages/enterprise/detail",
+    "pages/index/video"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#17ADCA",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#17ADCA",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/toolbar/home.png",
+        "selectedIconPath": "images/toolbar/home_sel.png"
+      },
+      {
+        "pagePath": "pages/introduction/index",
+        "text": "杭州简介",
+        "iconPath": "images/toolbar/co.png",
+        "selectedIconPath": "images/toolbar/co_sel.png"
+      },
+      {
+        "pagePath": "pages/jobList/index",
+        "text": "职位专区",
+        "iconPath": "images/toolbar/job.png",
+        "selectedIconPath": "images/toolbar/job_sel.png"
+      },
+      {
+        "pagePath": "pages/policy/index",
+        "text": "人才政策",
+        "iconPath": "images/toolbar/people.png",
+        "selectedIconPath": "images/toolbar/people_sel.png"
+      },
+      {
+        "pagePath": "pages/recruit/index",
+        "text": "现场招聘会",
+        "iconPath": "images/toolbar/scene.png",
+        "selectedIconPath": "images/toolbar/scene_sel.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "navigateToMiniProgramAppNameList": [
+    "51job小程序",
+    "腾讯问卷"
+  ],
+  "navigateToMiniProgramAppIdList": [
+    "wx1131e5c71e668b5d",
+    "wxebadf544ddae62cb"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

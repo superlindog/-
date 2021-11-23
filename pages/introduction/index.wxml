@@ -1,0 +1,15 @@
+<!--pages/jj/jj.wxml-->
+<view>
+  <image class="banner-wap" src="/images/banner-wap.png"></image>
+</view>
+<view class="brief_introduction">
+<view class="img1">
+  <image src="/images/Regional_introduction.png"></image>
+</view>
+<view class="img2">
+ <image src="https://cache.51job.com/imgurl/2021/hangzhou/Regional_introduction.png"></image>
+</view>
+</view>
+<view class="text">
+  <text>Copyright © 51job. All Rights Reserved.</text>
+</view>

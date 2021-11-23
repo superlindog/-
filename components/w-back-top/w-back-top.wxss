@@ -1,0 +1,61 @@
+/* components/w-back-top/w-back-top.wxss */
+.backtop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+position: fixed;
+right: 16rpx;
+bottom: 168rpx;
+width: 88rpx;
+height: 240rpx;
+background: #FFFFFF;
+box-shadow: 0px 8rpx 32rpx rgba(51, 51, 51, 0.16);
+opacity: 1;
+border-radius: 60rpx;
+z-index: 100;
+}
+.topbox{
+  display: flex;
+  flex-direction: column;
+ 
+}
+.returnbox{
+  display: flex;
+  flex-direction: column;
+  
+}
+.backtop .topbox image{
+  
+  margin-left: 28rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.backtop .returnbox image{
+  margin-left: 28rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.backtop .topbox .top{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  width: 48rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 800;
+  line-height: 34rpx;
+  color: #17ADCA;
+  opacity: 1;
+}
+.backtop .returnbox .return{
+  margin-top: 10rpx;
+  margin-left: 8rpx;
+  width: 72rpx;
+  height: 34rpx;
+  font-size: 24rpx;
+  font-family: Alibaba PuHuiTi;
+  font-weight: 800;
+  line-height: 34rpx;
+  color: #17ADCA;
+  opacity: 1;
+}

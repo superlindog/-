@@ -1,0 +1,8 @@
+function defIndexOf(array, value) {
+  res = array && value && array.indexOf(value) >= 0
+  return res
+}
+
+module.exports = {
+  indexOf: defIndexOf
+}

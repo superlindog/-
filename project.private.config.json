@@ -1,0 +1,24 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "求职加油站",
+          "pathName": "pages/teach/index",
+          "query": "diyurl=3",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

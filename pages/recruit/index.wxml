@@ -1,0 +1,13 @@
+<!--pages/zp/zp.wxml-->
+<view>
+  <image class="banner-wap" src="/images/banner-wap.png"></image>
+</view>
+<view class="Job_fair">
+<view class="img1">
+  <image src="/images/Job_fair.png"></image>
+</view>
+<view class="img2">
+ <image src="https://cache.51job.com/imgurl/2021/hangzhou/Job_fair.jpg" mode="widthFix"></image>
+</view>
+</view>
+

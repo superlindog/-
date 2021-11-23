@@ -1,0 +1,11 @@
+/**app.wxss**/
+@import "/icon.wxss";
+
+input {
+  color: #333333;
+  font-size: 28rpx;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

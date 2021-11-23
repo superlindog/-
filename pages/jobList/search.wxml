@@ -1,0 +1,11 @@
+<!--pages/jobList/search.wxml-->
+<view class="select">
+  <view class="inputitem">
+    <image class="img" src="/images/ic_search.png"></image>
+    <input type="text" class="input" placeholder="输入你要搜索的内容" placeholder-style="color: #999999;" bindconfirm="search" value="{{keyword}}"></input>
+  </view>
+  <text class="cancel" bindtap="cancel">取消</text>
+</view>
+
+
+<!--  -->

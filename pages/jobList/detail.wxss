@@ -1,0 +1,197 @@
+page {
+  background-color: #F6F6F6;
+}
+
+.banner {
+  width: 100%;
+}
+
+.item1 {
+  width: 100%;
+  box-sizing: border-box;
+  height: 274rpx;
+  background: #FFFFFF;
+  padding: 48rpx 40rpx;
+  position: relative;
+}
+
+.item1 .jobname {
+  height: 40rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+  color: #000000;
+}
+
+.item1 .condition {
+  height: 34rpx;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 120rpx;
+}
+
+.item1 .condition .condition-item {
+  display: flex;
+  height: 34rpx;
+  margin-right: 16rpx;
+  align-items: center;
+}
+
+.item1 .condition .condition-item .con-img {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 8rpx;
+}
+
+.item1 .condition .condition-item .con-text {
+  height: 34rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 34rpx;
+  color: #999999;
+}
+
+.wage {
+  display: flex;
+  position: absolute;
+  bottom: 48rpx;
+}
+
+.wage .text {
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+  color: #333333;
+}
+
+.wage .wageName {
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  line-height: 40rpx;
+  color: #17ADCA;
+  margin-left: 32rpx;
+}
+
+.company {
+  width: 100%;
+  height: 120rpx;
+  background: #FFFFFF;
+  margin: 16rpx 0;
+  display: flex;
+  align-items: center;
+}
+
+.company .coimg {
+  width: 32rpx;
+  height: 32rpx;
+  margin-left: 40rpx;
+  margin-right: 8rpx;
+}
+
+.company .coname {
+  height: 80rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 80rpx;
+  color: #333333;
+}
+
+.company .tocobuttom {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 42rpx;
+}
+
+.company .tocobuttom .text {
+  font-size: 24rpx;
+  font-weight: 400;
+  line-height: 80rpx;
+  color: #999999;
+  margin-right: 8rpx;
+}
+
+.company .tocobuttom .right-img {
+  width: 32rpx;
+  height: 32rpx;
+}
+
+.detail {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40rpx 190rpx 40rpx;
+  background-color: #FFFFFF;
+}
+
+.detail .title {
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+  color: #666666;
+  padding: 14rpx 0 18rpx 0;
+}
+
+.detail .text {
+  display: block;
+  font-size: 28rpx;
+  font-weight: 400;
+  line-height: 42rpx;
+  color: #666666;
+  padding-bottom: 40rpx;
+}
+
+.bottom {
+  width: 100%;
+  height: 184rpx;
+  background: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+}
+
+.bottom .sharebtn {
+  width: 186rpx;
+  height: 80rpx;
+  border: 2rpx solid #17ADCA;
+  border-radius: 8rpx;
+  position: absolute;
+  left: 32rpx;
+  top: 32rpx;
+  display: flex;
+  align-items: center;
+}
+
+.bottom .sharebtn .img {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 42rpx;
+}
+
+.bottom .sharebtn .text {
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+  color: #17ADCA;
+  position: absolute;
+  right: 42rpx;
+}
+
+.bottom .sendbtn {
+  width: 468rpx;
+  height: 80rpx;
+  background: #17ADCA;
+  border-radius: 8rpx;
+  font-size: 34rpx;
+  font-weight: 400;
+  line-height: 80rpx;
+  color: #FFFFFF;
+  text-align: center;
+  position: absolute;
+  right: 32rpx;
+  top: 32rpx;
+}

@@ -1,0 +1,80 @@
+<!--pages/enterprise/detail.wxml-->
+<view>
+  <image class="banner-wap" src="/images/banner-wap.png"></image>
+</view>
+<!-- 选项 -->
+<view class="tab {{isTabFixed?'tabFixed':''}}" id="tab">
+  <view class="navigation_item {{tabIdx==1 ? 'active' : ''}}" data-id="1" bind:tap="tapTabIdx">
+    <labe>公司简介</labe>
+    <view class="line"></view>
+  </view>
+  <view class="navigation_item {{tabIdx==2 ? 'active' : ''}}" data-id="2" bind:tap="tapTabIdx">
+    <labe>招聘职位</labe>
+    <view class="line"></view>
+  </view>
+</view>
+<!-- 公司简介 -->
+<view wx:if="{{tabIdx==1}}">
+  <view class="bg">
+    <view class="coinfo" wx:if="{{tabIdx==1}}">
+      <view class="coname">{{co.coname}}</view>
+      <view class="imagetext">
+        <view class="companytype">
+          <image src="/images/nature.png"></image>
+          <view class="titletext">{{co.companytype}}</view>
+        </view>
+        <view class="ctmid">
+          <image src="/images/company_size.png"></image>
+          <view class="titletext">11</view>
+        </view>
+      </view>
+      <view class="industrytype1">
+        <image src="/images/industry.png"></image>
+        <view class="titletext">{{co.industrytype1}}</view>
+      </view>
+      <view class="text">
+        <text decode user-select="true">{{co.coinfo}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<w-back-top wx:if="{{showBackTop}}"></w-back-top>
+<!-- 招聘职位 -->
+<view wx:if="{{tabIdx==2}}">
+  <block wx:if="{{jobList.length > 0 }}">
+    <view class="jobs">
+
+      <view class="job-item" wx:for="{{jobList}}">
+        <view data-jobid="{{item.jobid}}" bindtap="tojobdetail" style="width:100%;height:148rpx;">
+          <text class="jobname">{{item.jobname}}</text>
+          <text class="wage">{{item.providesalarname}}</text>
+          <view class="condition">
+            <view class="condition-item">
+              <image class="con-img" src="/images/city.png"></image>
+              <text class="con-text">{{item.workareaname}}</text>
+            </view>
+            <view class="condition-item">
+              <image class="con-img" src="/images/edu.png"></image>
+              <text class="con-text">{{item.degreefrom}}</text>
+            </view>
+            <view class="condition-item">
+              <image class="con-img" src="/images/crowd.png"></image>
+              <text class="con-text">{{item.jobnum}}人</text>
+            </view>
+          </view>
+        </view>
+        <view class="line"></view>
+        <view class="company" bindtap="tapToCorpDetail" data-coname="{{item.coname}}">
+          <image class="coimg" src="/images/company.png"></image>
+          <text class="coname">{{item.coname}}</text>
+          <view class="tocobuttom">
+            <text class="text">公司主页</text>
+            <image src="/images/ic_more.png" class="right-img"></image>
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </block>
+  <view class="nojobdata" wx:else>没有职位...</view>
+</view>

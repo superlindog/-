@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "企业专区",
+  "usingComponents": {
+    "w-back-top":"/components/w-back-top/w-back-top"
+  }
+}

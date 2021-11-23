@@ -1,0 +1,11 @@
+<!--components/w-back-top/w-back-top.wxml-->
+<view class="backtop">
+<view class="topbox"  bind:tap="handleBackTop">
+<image src="/images/top.png"></image>
+<view class="top">顶部</view>
+</view>
+<view class="returnbox"  bind:tap="handleReturnPage">
+<image src="/images/return.png"></image>
+<view class="return">上一页</view>
+</view>
+</view>

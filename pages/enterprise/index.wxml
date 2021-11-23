@@ -1,0 +1,88 @@
+<wxs module="fn" src="../../utils/view.wxs"></wxs>
+
+<view>
+  <image class="banner-wap" src="/images/banner-wap.png"></image>
+</view>
+<!-- 选项 -->
+<view class="listAndInput">
+<view style="position: sticky;top:0;z-index:99;">
+  <scroll-view class='scroll-x-view' scroll-x="true">
+    <view class="tab">
+      <view class="navigation_item {{tabIdx==1 ? 'active' : ''}}" bind:tap="tapTabOne" data-id="1">
+        <labe>全部分类</labe>
+        <view class="line"></view>
+      </view>
+      <view class="navigation_item {{tabIdx==item.id ? 'active' : ''}}" bind:tap="tapTabIdx" wx:for="{{list1.list}}" wx:key="{{item.id}}" data-id="{{item.id}}">
+        <labe>{{item.name}}</labe>
+        <view class="line"></view>
+      </view>
+    </view>
+  </scroll-view>
+  <!-- 筛选框和输入框 -->
+  <view class="background">
+    <view class="bg">
+      <view class="selectitem" bindtap="changeStatus">
+        <view class="screen">筛选</view>
+        <view class="drop_downbox">
+          <image class="drop_down" src="/images/drop_down.png"></image>
+        </view>
+      </view>
+      <view class="search">
+        <view class="inputbox">
+          <input class="ip_search" placeholder="输入你要搜索的内容" value="" bindconfirm="search" bindinput="getKeyword" />
+        </view>
+        <view class="search_text" bindtap="handleSearch">搜索</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+  <view class="list" id="tab">
+    <block>
+      <view class="item" wx:for="{{list}}" wx:key="id" data-coname="{{item.coname}}" bindtap="tapToCorpDetail">
+        <view class="titlecompany">{{item.coname}}</view>
+        <view class="more">
+          <image class="ic_more" src="/images/more.png"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<w-back-top wx:if="{{showBackTop}}"></w-back-top>
+<!-- 弹出框 -->
+<view class="cxj-tab-layout" wx:if="{{isActive}}">
+  <view class="mask" bindtap="layout"></view>
+  <scroll-view scroll-y class="scroll" >
+    <view class="cxj-tap-wrap">
+      <view>
+        <view class="topStyle">
+          <view class="screentext">企业筛选</view>
+          <view class="reset" bindtap="reset">
+            <image src="/images/reset.png"></image>
+            <text class="resettext">重置</text>
+          </view>
+          <view class="confirm">
+            <view class="weui-btn" bindtap="determine_filter">确定</view>
+          </view>
+        </view>
+        <view class="title" wx:if="{{jobCondition.companytype.length>0}}">企业类型</view>
+        <view class="cxj-tap-main">
+          <view class="navs" wx:for="{{jobCondition.companytype}}" wx:key="*this" data-key="companytype"
+            data-item="{{item}}" bindtap="tapArrayItemValue">
+            <view class="textitem {{fn.indexOf(searchCondition.companytype, item) ? 'activeselect' : ''}}">{{item}}</view>
+          </view>
+        </view>
+        <view class="title" wx:if="{{jobCondition.industrytype.length>0}}">所属行业</view>
+        <view class="cxj-tap-main">
+          <view class="navs" wx:for="{{jobCondition.industrytype}}" wx:key="*this" data-key="industrytype"
+            data-item="{{item}}" bindtap="tapArrayItemValue">
+            <view class="textitem {{fn.indexOf(searchCondition.industrytype, item) ? 'activeselect' : ''}}">{{item}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

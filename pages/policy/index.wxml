@@ -1,0 +1,13 @@
+<!--pages/rc/rc.wxml-->
+<view>
+  <image class="banner-wap" src="/images/banner-wap.png"></image>
+</view>
+<view class="Talent_policy">
+<view class="img1">
+  <image src="/images/Talent_policy.png"></image>
+</view>
+<view class="img2">
+ <image src="https://cache.51job.com/imgurl/2021/hangzhou/Talent_policy.jpg" mode="widthFix"></image>
+</view>
+</view>
+

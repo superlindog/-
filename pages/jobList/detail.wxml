@@ -1,0 +1,44 @@
+<image src="/images/banner-wap.png" class="banner" mode="widthFix"></image>
+<view class="item1">
+  <view class="jobname">{{jobList[0].jobname}}</view>
+  <view class="condition">
+    <view class="condition-item">
+      <image class="con-img" src="/images/city.png"></image>
+      <text class="con-text">{{jobList[0].workareaname}}</text>
+    </view>
+    <view class="condition-item">
+      <image class="con-img" src="/images/edu.png"></image>
+      <text class="con-text">{{jobList[0].degreefrom}}</text>
+    </view>
+    <view class="condition-item">
+      <image class="con-img" src="/images/crowd.png"></image>
+      <text class="con-text">{{jobList[0].jobnum}}</text>
+    </view>
+  </view>
+  <view class="wage">
+    <text class="text">薪资范围:</text>
+    <text class="wageName">{{jobList[0].providesalarname}}</text>
+  </view>
+</view>
+
+<view class="company" bindtap="tapToCorpDetail" data-coname="{{jobList[0].coname}}">
+  <image class="coimg" src="/images/company.png"></image>
+  <text class="coname">{{jobList[0].coname}}</text>
+  <view class="tocobuttom">
+    <text class="text">公司主页</text>
+    <image src="/images/ic_more.png" class="right-img"></image>
+  </view>
+</view>
+
+<view class="detail">
+  <view class="title">岗位描述</view>
+  <rich-text nodes="{{jobList[0].jobdetail}}"></rich-text>
+</view>
+
+<view class="bottom">
+  <button class="sharebtn" open-type="share">
+    <image class="img" src="/images/ic_share.png"></image>
+    <text class="text">分享</text>
+  </button>
+  <view class="sendbtn" bindtap="tapTo51Mini">投递简历</view>
+</view>
